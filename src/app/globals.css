@@ -16,6 +16,10 @@
   }
 }
 
+* {
+  font-family: var(--font-sans);
+
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +28,25 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+#image-track > div > .image {
+  width: 30vh;
+  height: 40vh;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#image-track > div > .image.add {
+  object-fit: contain;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  /* overflow: hidden; */
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); */
 }
